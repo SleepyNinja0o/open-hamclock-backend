@@ -11,6 +11,12 @@ MIT - this is free. Not for commercial use
 - [ ] aurora.txt generator
 - [ ] VOACAP map generator
 - [x] IP geolocation fetch implemented - requires free tier 1000 req per day account and API key
+- [ ] fetchBandConditions.pl re-implemented
+- [ ] SDO/f_211_193_171_170.bmp.z
+- [ ] SDO/latest_170_HMIB.bmp.z
+- [ ] fetchVOACAPArea.pl
+- [ ] worldwx/wx.txt
+- [ ] solar-flux/solarflux-99.txt
 - [x] HamWeekly.com RSS feed generator
 - [x] AR Newsline RSS feed generator
 - [x] zlib decompress utilty script
