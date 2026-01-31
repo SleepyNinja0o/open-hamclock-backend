@@ -29,7 +29,7 @@ HamClock requests about 40+ artifacts. I have locally replicated all of them tha
 - [ ] dst/dst.txt
 - [ ] drap/stats.txt
 - [ ] solar-wind/swind-24hr.txt
-- [ ] cities2.txt
+- [x] cities2.txt (static city file - no urgency to update this for maybe 5 years or more)
 - [ ] ssn/ssn-31.txt
 - [ ] ONTA/onta.txt
 - [ ] contests/contests311.txt
