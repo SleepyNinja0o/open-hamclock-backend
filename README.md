@@ -12,7 +12,7 @@ MIT - this is free. Not for commercial use
 
 HamClock requests about 40+ artifacts. I have locally replicated all of them that I could find.
 
-- [x] Bz.txt generator
+- [x] Bz.txt generator (and crontab)
 - [x] wx.pl working
 - [x] Xray.txt generator
 - [x] aurora.txt generator (and publisher)
