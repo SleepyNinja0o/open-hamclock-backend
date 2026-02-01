@@ -100,6 +100,14 @@ You will need:
   sudo chown -R www-data:www-data /opt/hamclock-backend
   sudo chmod +x /opt/hamclock-backend/htdocs/ham/HamClock/*.pl
   sudo cp 50-hamclock.conf /etc/lighttpd/conf-available/50-hamclock.conf
+  # add the following to the lighttpd configuration file
+  server.modules = (
+      "mod_indexfile",
+      "mod_access",
+      "mod_alias",
+      "mod_redirect",
+      "mod_cgi"
+  )
 
   sudo lighttpd -tt -f /etc/lighttpd/lighttpd.conf
   sudo lighttpd-enable-mod hamclock
