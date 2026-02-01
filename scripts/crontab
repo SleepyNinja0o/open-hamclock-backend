@@ -46,4 +46,5 @@
 
 17 */12 * * * /opt/hamclock-backend/scripts/gen_kindex.pl >> /opt/hamclock-backend/logs/gen_kindex.log 2>&1
 
+*/6 */1 * * * /opt/hamclock-backend/scripts/dst.sh
 0 */3 * * * /opt/hamclock-backend/scripts/build_esats.pl >> /opt/hamclock-backend/logs/build_esats.log 2>&1
