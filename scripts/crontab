@@ -43,3 +43,5 @@
 30 0 * * * /opt/hamclock-backend/scripts/gen_ng3k.pl >> /opt/hamclock-backend/logs/gen_ng3k.pl 2>&1
 
 35 0 * * * /opt/hamclock-backend/scripts/merge_dxpeditions.pl >> /opt/hamclock-backend/logs/merge_dxpeditions.log 2>&1
+
+0 */3 * * * /opt/hamclock-backend/scripts/build_esats.pl >> /opt/hamclock-backend/logs/build_esats.log 2>&1
