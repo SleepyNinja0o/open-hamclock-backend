@@ -52,7 +52,8 @@ HamClock requests about 40+ artifacts. I have locally replicated all of them tha
 - [ ] maps/map-N-660x330-Aurora.bmp.z
 - [ ] maps/map-D-660x330-Wx-mB.bmp.z
 - [ ] maps/map-N-660x330-Wx-mB.bmp.z
-- [ ] SDO/f_304_170.bmp.z
+- [x] SDO/f_304_170.bmp.z
+- [ ] SDO cronjob
 - [ ] fetchVOACAP-MUF.pl?YEAR=2026&MONTH=1&UTC=17&TXLAT=&TXLNG=&PATH=0&WATTS=100&WIDTH=660&HEIGHT=330&MHZ=0.00&TOA=3.0&MODE=19&TOA=3.0
 - [ ] fetchVOACAP-TOA.pl?YEAR=2026&MONTH=1&UTC=17&TXLAT=&TXLNG=&PATH=0&WATTS=100&WIDTH=660&HEIGHT=330&MHZ=14.10&TOA=3.0&MODE=19&TOA=3.0
 - [x] ham/HamClock/RSS/web15rss.pl
