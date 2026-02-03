@@ -1,4 +1,4 @@
-# extracted from cty_wt_mod.dat on Sat Jan 31 07:33:02 2026Z
+# extracted from cty_wt_mod.dat on Tue Feb  3 07:33:02 2026Z
 # prefix     lat+N   lng+E  DXCC
 1A           41.90   12.43  246
 2A           56.82   -4.18  279

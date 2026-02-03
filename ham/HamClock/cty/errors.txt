@@ -1,0 +1,688 @@
+Tue Mar  4 02:33:01 UTC 2025
+curl: (35) error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure
+curl https://www.country-files.com/cty/cty_wt_mod.dat failed
+Thu Mar  6 02:33:01 UTC 2025
+curl: (35) error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure
+curl https://www.country-files.com/cty/cty_wt_mod.dat failed
+Sat Mar  8 02:33:01 UTC 2025
+curl: (35) error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure
+curl https://www.country-files.com/cty/cty_wt_mod.dat failed
+Sun Mar  9 02:33:01 UTC 2025
+curl: (35) error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure
+curl https://www.country-files.com/cty/cty_wt_mod.dat failed
+Tue Mar 11 02:33:01 UTC 2025
+curl: (35) error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure
+curl https://www.country-files.com/cty/cty_wt_mod.dat failed
+Thu Mar 13 02:33:01 UTC 2025
+curl: (35) error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure
+curl https://www.country-files.com/cty/cty_wt_mod.dat failed
+Sat Mar 15 02:33:01 UTC 2025
+curl: (35) error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure
+curl https://www.country-files.com/cty/cty_wt_mod.dat failed
+Sun Mar 16 02:33:01 UTC 2025
+curl: (35) error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure
+curl https://www.country-files.com/cty/cty_wt_mod.dat failed
+Tue Mar 18 02:33:01 UTC 2025
+curl: (35) error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure
+curl https://www.country-files.com/cty/cty_wt_mod.dat failed
+Wed Mar 19 22:55:30 UTC 2025
+curl: (35) error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure
+curl https://www.country-files.com/cty/cty_wt_mod.dat failed
+Thu Mar 20 00:41:41 UTC 2025
+curl: (35) error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure
+curl https://www.country-files.com/cty/cty_wt_mod.dat failed
+Thu Mar 20 02:17:57 UTC 2025
+curl: (35) error:14094410:SSL routines:ssl3_read_bytes:sslv3 alert handshake failure
+curl https://www.country-files.com/cty/cty_wt_mod.dat failed
+Thu Mar 20 02:54:11 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call R4FBJ/0/P
+rejected call VK0/FT4YM/P
+found 28609
+Fri Mar 21 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call R4FBJ/0/P
+rejected call VK0/FT4YM/P
+found 28609
+Sun Mar 23 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call R4FBJ/0/P
+rejected call VK0/FT4YM/P
+found 28609
+Tue Mar 25 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call R4FBJ/0/P
+rejected call VK0/FT4YM/P
+found 28609
+Thu Mar 27 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call R4FBJ/0/P
+rejected call VK0/FT4YM/P
+found 28602
+Sat Mar 29 07:33:02 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call R4FBJ/0/P
+rejected call VK0/FT4YM/P
+found 28602
+Mon Mar 31 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call R4FBJ/0/P
+rejected call VK0/FT4YM/P
+found 28602
+Tue Apr  1 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call R4FBJ/0/P
+rejected call VK0/FT4YM/P
+found 28602
+Thu Apr  3 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call R4FBJ/0/P
+rejected call VK0/FT4YM/P
+found 28602
+Sat Apr  5 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call R4FBJ/0/P
+rejected call VK0/FT4YM/P
+found 28602
+Mon Apr  7 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call R4FBJ/0/P
+found 28573
+Wed Apr  9 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call R4FBJ/0/P
+found 28573
+Fri Apr 11 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call R4FBJ/0/P
+found 28573
+Sun Apr 13 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call VK/M0LEP/P
+found 28564
+Tue Apr 15 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call VK/M0LEP/P
+found 28564
+Thu Apr 17 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call VK/M0LEP/P
+found 28564
+Sat Apr 19 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call VK/M0LEP/P
+found 28564
+Mon Apr 21 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call VK/M0LEP/P
+found 28564
+Wed Apr 23 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call VK/M0LEP/P
+found 28623
+Fri Apr 25 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call VK/M0LEP/P
+found 28623
+Sun Apr 27 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call VK/M0LEP/P
+found 28623
+Tue Apr 29 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call VK/M0LEP/P
+found 28623
+Thu May  1 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BO
+rejected call VK/M0LEP/P
+found 28856
+Sat May  3 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28851
+Mon May  5 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28851
+Wed May  7 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28855
+Fri May  9 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28855
+Sun May 11 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28855
+Tue May 13 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28855
+Thu May 15 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28855
+Sat May 17 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28855
+Mon May 19 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28855
+Wed May 21 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28855
+Fri May 23 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28855
+# Fri May 23 19:50:22 2025
+found 340 WAC
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+no WAC for DXCC 522
+found 28799 cty
+# Fri May 23 21:10:08 2025
+found 340 WAC
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+no WAC for DXCC 522
+found 28799 cty
+# Sun May 25 07:33:01 2025
+found 340 WAC
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+no WAC for DXCC 522
+found 28799 cty
+Tue May 27 02:30:17 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28799
+Tue May 27 07:33:02 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28799
+Thu May 29 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28799
+Sat May 31 07:33:02 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28799
+Sun Jun  1 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28799
+Tue Jun  3 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28799
+Thu Jun  5 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28799
+Sat Jun  7 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28799
+Mon Jun  9 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call VK/M0LEP/P
+found 28799
+Wed Jun 11 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28773
+Fri Jun 13 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28776
+Sun Jun 15 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28776
+Tue Jun 17 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28776
+Thu Jun 19 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28776
+Sat Jun 21 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28776
+Mon Jun 23 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28776
+Wed Jun 25 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28776
+Fri Jun 27 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call RA/EA8RM/P
+found 28544
+Sun Jun 29 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call RA/EA8RM/P
+found 28556
+Tue Jul  1 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call RA/EA8RM/P
+found 28556
+Thu Jul  3 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call RA/EA8RM/P
+found 28562
+Sat Jul  5 07:33:02 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call RA/EA8RM/P
+found 28562
+Mon Jul  7 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call RA/EA8RM/P
+found 28562
+Wed Jul  9 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call RA/EA8RM/P
+found 28562
+Fri Jul 11 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call RA/EA8RM/P
+found 28562
+Sun Jul 13 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call RA/EA8RM/P
+found 28562
+Tue Jul 15 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call RA/EA8RM/P
+found 28562
+Thu Jul 17 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call RA/EA8RM/P
+found 28562
+Sat Jul 19 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call RA/EA8RM/P
+found 28604
+Mon Jul 21 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call RA/EA8RM/P
+found 28604
+Wed Jul 23 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call RA/EA8RM/P
+found 28604
+Fri Jul 25 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call RA/EA8RM/P
+found 28604
+Sun Jul 27 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call RA/EA8RM/P
+found 28623
+Tue Jul 29 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call RA/EA8RM/P
+found 28623
+Thu Jul 31 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call RA/EA8RM/P
+found 28623
+Fri Aug  1 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call RA/EA8RM/P
+found 28623
+Sun Aug  3 07:33:02 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+found 28633
+Tue Aug  5 07:33:02 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+found 28633
+Thu Aug  7 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+found 28633
+Sat Aug  9 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+found 28633
+Mon Aug 11 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call UB3DZF/9/P
+found 28637
+Wed Aug 13 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call UB3DZF/9/P
+found 28637
+Fri Aug 15 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call UB3DZF/9/P
+found 28637
+Sun Aug 17 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call UB3DZF/9/P
+found 28633
+Tue Aug 19 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call UB3DZF/9/P
+found 28633
+Thu Aug 21 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call UB3DZF/9/P
+found 28635
+Sat Aug 23 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call UB3DZF/9/P
+found 28635
+Mon Aug 25 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call UB3DZF/9/P
+found 28635
+Wed Aug 27 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call UB3DZF/9/P
+found 28655
+Fri Aug 29 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call UB3DZF/9/P
+found 28655
+Sun Aug 31 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call UB3DZF/9/P
+found 28655
+Mon Sep  1 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call UB3DZF/9/P
+found 28655
+Wed Sep  3 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call IT9ACJ/I/BN
+rejected call UB3DZF/9/P
+found 28655
+Fri Sep  5 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call UB3DZF/9/P
+found 28590
+Sun Sep  7 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call UB3DZF/9/P
+found 28589
+Tue Sep  9 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call UB3DZF/9/P
+found 28589
+Thu Sep 11 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call UB3DZF/9/P
+found 28589
+Sat Sep 13 07:33:02 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call UB3DZF/9/P
+found 28589
+Mon Sep 15 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call UB3DZF/9/P
+found 28589
+Wed Sep 17 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call UB3DZF/9/P
+found 28589
+Fri Sep 19 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call UB3DZF/9/P
+found 28589
+Sun Sep 21 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call UB3DZF/9/P
+found 28589
+Tue Sep 23 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call UB3DZF/9/P
+found 28589
+Thu Sep 25 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call UB3DZF/9/P
+found 28589
+Sat Sep 27 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call UB3DZF/9/P
+found 28589
+Mon Sep 29 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+rejected call UB3DZF/9/P
+found 28589
+Wed Oct  1 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28583
+Fri Oct  3 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28583
+Sun Oct  5 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28583
+Tue Oct  7 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28583
+Thu Oct  9 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28583
+Sat Oct 11 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28583
+Mon Oct 13 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28548
+Wed Oct 15 07:33:02 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28548
+Fri Oct 17 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28546
+Sun Oct 19 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28546
+Tue Oct 21 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28546
+Thu Oct 23 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28546
+Sat Oct 25 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28546
+Mon Oct 27 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28546
+Wed Oct 29 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28590
+Fri Oct 31 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28590
+Sat Nov  1 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28590
+Mon Nov  3 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28590
+Wed Nov  5 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28590
+Fri Nov  7 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28590
+Sun Nov  9 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28590
+Tue Nov 11 07:33:02 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28590
+Thu Nov 13 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28577
+Sat Nov 15 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28577
+Mon Nov 17 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28577
+Wed Nov 19 07:33:02 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28577
+Fri Nov 21 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28577
+Sun Nov 23 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28577
+Tue Nov 25 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28577
+Thu Nov 27 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28562
+Sat Nov 29 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28562
+Mon Dec  1 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28562
+Wed Dec  3 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28562
+Fri Dec  5 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28562
+Sun Dec  7 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28562
+Tue Dec  9 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28562
+Thu Dec 11 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28632
+Sat Dec 13 07:33:02 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28650
+Mon Dec 15 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28650
+Wed Dec 17 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28650
+Fri Dec 19 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28662
+Sun Dec 21 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28662
+Tue Dec 23 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28662
+Thu Dec 25 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28662
+Sat Dec 27 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28662
+Mon Dec 29 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28662
+Wed Dec 31 07:33:01 UTC 2025
+rejected call DL0NOT/EMCOM
+found 28662
+Thu Jan  1 07:33:01 UTC 2026
+rejected call DL0NOT/EMCOM
+found 28662
+Sat Jan  3 07:33:01 UTC 2026
+rejected call DL0NOT/EMCOM
+found 28662
+Mon Jan  5 07:33:01 UTC 2026
+rejected call DL0NOT/EMCOM
+found 28663
+Wed Jan  7 07:33:01 UTC 2026
+rejected call DL0NOT/EMCOM
+found 28663
+Fri Jan  9 07:33:01 UTC 2026
+rejected call DL0NOT/EMCOM
+found 28663
+Sun Jan 11 07:33:01 UTC 2026
+rejected call DL0NOT/EMCOM
+found 28663
+Tue Jan 13 07:33:01 UTC 2026
+rejected call DL0NOT/EMCOM
+found 28663
+Thu Jan 15 07:33:01 UTC 2026
+rejected call DL0NOT/EMCOM
+found 28660
+Sat Jan 17 07:33:01 UTC 2026
+rejected call DL0NOT/EMCOM
+found 28664
+Mon Jan 19 07:33:01 UTC 2026
+rejected call DL0NOT/EMCOM
+found 28664
+Wed Jan 21 07:33:01 UTC 2026
+rejected call DL0NOT/EMCOM
+found 28664
+Fri Jan 23 07:33:01 UTC 2026
+rejected call DL0NOT/EMCOM
+found 28664
+Sun Jan 25 07:33:01 UTC 2026
+rejected call DL0NOT/EMCOM
+found 28673
+Tue Jan 27 07:33:01 UTC 2026
+rejected call DL0NOT/EMCOM
+found 28673
+Thu Jan 29 07:33:01 UTC 2026
+rejected call DL0NOT/EMCOM
+found 28673
+Sat Jan 31 07:33:01 UTC 2026
+found 28674
+Sun Feb  1 07:33:01 UTC 2026
+found 28674
+Tue Feb  3 07:33:01 UTC 2026
+found 28674
