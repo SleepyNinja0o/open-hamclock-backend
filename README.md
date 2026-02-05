@@ -47,7 +47,7 @@ This project generates map and data artifacts in the same formats expected by th
 ## Starting HamClock
 HamClock is hard-coded to use the clearskyinstitute.com URL. You can override to use a new backend by starting HamClock with the -b option
 
-### Localhost
+### Localhost (if running OHB adjacent to your existing HamClock client such as Raspberry Pi)
 
 ./hamclock -b localhost:80
 
