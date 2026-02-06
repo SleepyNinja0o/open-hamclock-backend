@@ -10,8 +10,12 @@ my $q = CGI->new;
 my $ofgrid = $q->param('ofgrid') // '';
 my $maxage = $q->param('maxage') // 900;
 
-# Print header for web output
-print $q->header('text/plain');
+my $ip = $ENV{HTTP_X_FORWARDED_FOR} || $ENV{REMOTE_ADDR} || "unknown";
+
+print "Remote_Addr: $ip\n";
+print $q->header(
+    -type => 'text/plain; charset=ISO-8859-1'
+);
 
 # Basic validation
 if (!$ofgrid) {
