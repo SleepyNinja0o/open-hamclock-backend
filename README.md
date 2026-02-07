@@ -65,6 +65,21 @@ HamClock is hard-coded to use the clearskyinstitute.com URL. You can override to
 
 ./hamclock -b \<central-server-ip-or-host\>:80
 
+## Stopping OHB
+### Web Server
+sudo systemctl stop lighttpd
+
+### Cron Jobs
+#### Remove all jobs
+sudo crontab -u www-data -l > ~/www-data.cron.backup
+sudo crontab -u www-data -r
+
+Note: Removing the cron jobs will stop all background processes. Ensure that the www-data.cron.backup actually was created before you remove all of www-data user's cronjobs
+
+#### Restore all jobs
+sudo crontab -u www-data /path/to/www-data.cron.backup
+sudo crontab -u www-data -l | head
+
 ## Project Completion Status
 
 HamClock requests about 40+ artifacts. I have locally replicated all of them that I could find.
