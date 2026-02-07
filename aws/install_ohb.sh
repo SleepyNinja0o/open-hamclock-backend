@@ -52,7 +52,8 @@ EOF
 echo -e "${GRN}RF • Space • Propagation • Maps${NC}"
 echo
 
-STEPS=8
+# NOTE: you have 9 progress steps below
+STEPS=9
 STEP=0
 
 # ---------- sanity ----------
@@ -100,11 +101,6 @@ sudo git -C "$BASE" gc --prune=now >/dev/null || true
 
 sudo chown -R www-data:www-data "$BASE"
 
-# ---------- persist user image size selection ---------
-sudo mkdir -p "$BASE/etc"
-echo "OHB_SIZES=\"$OHB_SIZES\"" | sudo tee "$BASE/etc/ohb-sizes.conf" >/dev/null
-sudo chown -R www-data:www-data "$BASE/etc"
-
 # ---- image sizes (maps) ----
 DEFAULT_SIZES="660x330,1320x660,1980x990,2640x1320,3960x1980,5280x2640,5940x2970,7920x3960"
 OHB_SIZES="${OHB_SIZES:-$DEFAULT_SIZES}"
@@ -148,6 +144,11 @@ if [[ "$OHB_SIZES" != *"660x330"* ]]; then
   echo "WARN: size list does not include 660x330; some maps are tuned around that baseline." >&2
 fi
 
+# ---------- persist user image size selection ----------
+sudo mkdir -p "$BASE/etc"
+echo "OHB_SIZES=\"$OHB_SIZES\"" | sudo tee "$BASE/etc/ohb-sizes.conf" >/dev/null
+sudo chown -R www-data:www-data "$BASE/etc"
+
 # ---------- python venv ----------
 STEP=$((STEP+1)); progress $STEP $STEPS
 echo -e "${BLU}==> Creating Python virtualenv${NC}"
@@ -178,6 +179,9 @@ if [ -d "$BASE/ham" ]; then
 fi
 
 sudo chown -R www-data:www-data "$BASE"
+
+# Make Perl CGI scripts executable for lighttpd/mod_cgi
+sudo find "$BASE/htdocs/ham/HamClock" -maxdepth 1 -type f -name '*.pl' -exec chmod 755 {} \;
 
 # ---------- dirs ----------
 STEP=$((STEP+1)); progress $STEP $STEPS
@@ -236,11 +240,12 @@ seed_spinner() {
   done
   printf "\r${GRN}[✓] Done           ${NC}\n"
 }
+
 run_perl() {
   local f=$1
   local log="$BASE/logs/${f%.pl}.log"
   echo -e "${YEL}Running perl $f${NC}"
-  sudo -u www-data perl "$BASE/scripts/$f" >> "$log" 2>&1 &
+  sudo -u www-data env OHB_SIZES="$OHB_SIZES" perl "$BASE/scripts/$f" >> "$log" 2>&1 &
   seed_spinner $!
 }
 
@@ -248,7 +253,7 @@ run_sh() {
   local f=$1
   local log="$BASE/logs/${f%.sh}.log"
   echo -e "${YEL}Running bash $f${NC}"
-  sudo -u www-data bash "$BASE/scripts/$f" >> "$log" 2>&1 &
+  sudo -u www-data env OHB_SIZES="$OHB_SIZES" bash "$BASE/scripts/$f" >> "$log" 2>&1 &
   seed_spinner $!
 }
 
@@ -256,10 +261,9 @@ run_flock_sh() {
   local f=$1
   local log="$BASE/logs/${f%.sh}.log"
   echo -e "${YEL}Running flocked $f${NC}"
-  sudo -u www-data flock -n /tmp/update_sdo.lock bash "$BASE/scripts/$f" >> "$log" 2>&1 &
+  sudo -u www-data env OHB_SIZES="$OHB_SIZES" flock -n /tmp/update_sdo.lock bash "$BASE/scripts/$f" >> "$log" 2>&1 &
   seed_spinner $!
 }
-
 
 # ---- ordered execution ----
 
