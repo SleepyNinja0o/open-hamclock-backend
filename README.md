@@ -26,7 +26,7 @@ https://discord.gg/k2Nmdjup
 - [WA7BNM Weekend Contests Calendar](https://www.contestcalendar.com/) 
 
 ## Vision
-The goal is to make this as a drop-in replacement for the HamClock backend by replicating the same client/server responses with Perl CGI scripting and static files. We don't have access to the backend server source code so this is completely created by looking at the interfaces. To allow existing HamClock's running on Arduino to continue to work, we will setup a local DNS sinkhole to redirect to your local backend running at your home or office. Or, the HamClock client may be modified to point to a new central server permanently or use the built-in -b option
+The goal is to make this as a drop-in replacement for the HamClock backend by replicating the same client/server responses with Perl CGI scripting and static files. We don't have access to the backend server source code so this is completely created by looking at the interfaces. The goal is to allow for local or central install of OHB to keep all existing HamClock's from working beyond June 2026
 
 ## Interoperability
 This project generates map and data artifacts in the same formats expected by the HamClock client (e.g. zlib compressed BMP RGB565 map tiles) to support interoperability. This project is not affiliated with or endorsed by the original HamClock project or any third party. Data products are derived from public upstream sources such as NOAA SWPC and NASA
@@ -97,12 +97,13 @@ HamClock is hard-coded to use the clearskyinstitute.com URL. You can override to
 
 ### Localhost (if running OHB adjacent to your existing HamClock client such as Raspberry Pi)
 ```bash
-./hamclock -b localhost:80
+hamclock -b localhost:80
 ```
+Note: Depending on where you installed HamClock application, the path may be different. If you followed the instructions [here](https://qso365.co.uk/2024/05/how-to-set-up-a-hamclock-for-your-shack/), then it will be installed in /usr/local/bin.
 
 ### Different Central Server
 ```bash
-./hamclock -b \<central-server-ip-or-host\>:80
+hamclock -b \<central-server-ip-or-host\>:80
 ```
 ## Stopping OHB
 ### Web Server
