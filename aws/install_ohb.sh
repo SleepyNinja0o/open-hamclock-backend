@@ -100,11 +100,61 @@ sudo git -C "$BASE" gc --prune=now >/dev/null || true
 
 sudo chown -R www-data:www-data "$BASE"
 
+# ---------- persist user image size selection ---------
+sudo mkdir -p "$BASE/etc"
+echo "OHB_SIZES=\"$OHB_SIZES\"" | sudo tee "$BASE/etc/ohb-sizes.conf" >/dev/null
+sudo chown -R www-data:www-data "$BASE/etc"
+
+# ---- image sizes (maps) ----
+DEFAULT_SIZES="660x330,1320x660,1980x990,2640x1320,3960x1980,5280x2640,5940x2970,7920x3960"
+OHB_SIZES="${OHB_SIZES:-$DEFAULT_SIZES}"
+
+usage() {
+  echo "Usage: $0 [--sizes WxH,WxH,...] [--size WxH ...]"
+  echo "Example: $0 --sizes \"660x330,1320x660\""
+}
+
+is_size() { [[ "$1" =~ ^[0-9]+x[0-9]+$ ]]; }
+
+# accept flags (also allow OHB_SIZES env var)
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --sizes)
+      shift; [[ $# -gt 0 ]] || { echo "ERROR: --sizes requires a value"; exit 1; }
+      OHB_SIZES="$1"; shift;;
+    --size)
+      shift; [[ $# -gt 0 ]] || { echo "ERROR: --size requires a value"; exit 1; }
+      if [[ -z "${_SIZES_SET:-}" ]]; then _SIZES_SET=1; OHB_SIZES=""; fi
+      OHB_SIZES+="${OHB_SIZES:+,}$1"; shift;;
+    -h|--help) usage; exit 0;;
+    *) echo "ERROR: unknown arg: $1"; usage; exit 1;;
+  esac
+done
+
+# normalize + validate + dedupe
+OHB_SIZES="${OHB_SIZES//[[:space:]]/}"
+IFS=',' read -r -a _tmp_sizes <<< "$OHB_SIZES"
+declare -A _seen=()
+_norm_sizes=()
+for s in "${_tmp_sizes[@]}"; do
+  [[ -n "$s" ]] || continue
+  is_size "$s" || { echo "ERROR: invalid size '$s' (expected WxH)"; exit 1; }
+  if [[ -z "${_seen[$s]:-}" ]]; then _seen[$s]=1; _norm_sizes+=("$s"); fi
+done
+[[ ${#_norm_sizes[@]} -gt 0 ]] || { echo "ERROR: empty size list"; exit 1; }
+OHB_SIZES="$(IFS=','; echo "${_norm_sizes[*]}")"
+
+if [[ "$OHB_SIZES" != *"660x330"* ]]; then
+  echo "WARN: size list does not include 660x330; some maps are tuned around that baseline." >&2
+fi
+
 # ---------- python venv ----------
 STEP=$((STEP+1)); progress $STEP $STEPS
 echo -e "${BLU}==> Creating Python virtualenv${NC}"
 
 sudo -u www-data mkdir -p "$BASE/tmp/pip-cache"
+sudo -u www-data mkdir -p "$BASE/tmp/worldwx"
+sudo -u www-data mkdir -p "$BASE/tmp/mpl"
 
 sudo -u www-data env HOME="$BASE/tmp" XDG_CACHE_HOME="$BASE/tmp" PIP_CACHE_DIR="$BASE/tmp/pip-cache" \
 python3 -m venv "$VENV"
@@ -164,13 +214,6 @@ STEP=$((STEP+1)); progress $STEP $STEPS
 echo -e "${BLU}==> Initial artifact generation${NC}"
 
 sudo chmod +x "$BASE/scripts/"*
-
-#sudo -u www-data bash <<EOF
-#cd "$BASE/scripts" || exit 1
-#for f in gen_ssn.pl gen_kp.pl gen_aurora.pl update_all_sdo.sh; do
-#  [ -f "\$f" ] && ./"\$f" || echo "Skipping \$f"
-#done
-#EOF
 
 # ---------- initial pre-seed ----------
 STEP=$((STEP+1)); progress $STEP $STEPS
