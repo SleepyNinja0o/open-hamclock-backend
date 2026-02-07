@@ -37,6 +37,8 @@ This project generates map and data artifacts in the same formats expected by th
 - Root directories missing on install. Manually create cache, tmp, tmp/psk-cache, and logs if missing
 - One or more SDO images may report 'File is not BMP'. If this is the case, try switching to a different image temporarily
 - Raspberry Pi CPU Spikes due to image generation - requires a feature to generate smaller size imagery for small form factor PCs
+- DRAP data will show as invalid on fresh OHB installs because it takes approximately 36 hours to build up a suitable cache. The reason for this is because NOAA does not publish historical, current day data so if the application wants to show a time series graph including the current day then it needs to be pulling from NOAA SWX every five minutes. The fix for this when using OHB is to allow OHB to cache for 36 hours after a fresh install
+  
 
 ## Compatibility
 - [x] Ubuntu 22.x LTS
