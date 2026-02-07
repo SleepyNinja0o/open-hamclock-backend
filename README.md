@@ -22,7 +22,7 @@ https://discord.gg/k2Nmdjup
 - [NG3K.com](https://www.ng3k.com/)
 - [ARNewsline.com](https://www.arnewsline.org/)
 - [PSKReporter](https://pskreporter.info/) by Phillip Gladstone
-- [WSPR Live](https:/wspr.live/)
+- [WSPR Live](https://wspr.live/)
 - [WA7BNM Weekend Contests Calendar](https://www.contestcalendar.com/) 
 
 ## Vision
