@@ -63,6 +63,7 @@ RUN cd /opt/hamclock-backend && \
     /usr/sbin/lighty-enable-mod accesslog && \
     /usr/sbin/lighttpd-enable-mod hamclock && \
     rm -f /var/www/html/index.lighttpd.html && \
+    cp ham/HamClock/favicon.ico /var/www/html/ && \
     cat <<EOF >>/etc/lighttpd/lighttpd.conf
 server.modules += (
   "mod_cgi"
