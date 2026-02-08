@@ -5,6 +5,7 @@ use warnings;
 use LWP::UserAgent;
 use JSON qw(decode_json);
 use File::Temp qw(tempfile);
+use File::Copy 'move';
 
 # NOAA GOES X-ray source (primary satellite)
 my $URL = 'https://services.swpc.noaa.gov/json/goes/primary/xrays-3-day.json';
@@ -84,6 +85,6 @@ for my $time (sort keys %by_time) {
 
 close $fh;
 
-rename $tmp, $OUT
-    or die "ERROR: rename failed: $!\n";
+move $tmp, $OUT
+    or die "ERROR: move failed: $!\n";
 
