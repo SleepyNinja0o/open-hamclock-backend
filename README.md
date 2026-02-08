@@ -32,7 +32,7 @@ The goal is to make this as a drop-in replacement for the HamClock backend by re
 This project generates map and data artifacts in the same formats expected by the HamClock client (e.g. zlib compressed BMP RGB565 map tiles) to support interoperability. This project is not affiliated with or endorsed by the original HamClock project or any third party. Data products are derived from public upstream sources such as NOAA SWPC and NASA
 
 ## Known Issues
-- Satellite planning page will cause HamClock to fail. Error message refers to a SatTool name lookup issue
+- Satellite planning page will cause HamClock to fail. Error message refers to a SatTool name lookup issue. This seems to only happen if two satellites are not selected by the user. To the best of our knowledge, this is a HamClock bug
 - IP Geolocation will not work if API key not set. To fix, set API key in fetchIPGeoloc.pl
 - Root directories missing on install. Manually create cache, tmp, tmp/psk-cache, and logs if missing
 - One or more SDO images may report 'File is not BMP'. If this is the case, try switching to a different image temporarily
