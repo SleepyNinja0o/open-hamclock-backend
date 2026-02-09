@@ -4,11 +4,13 @@
 IMAGE_BASE=komacke/open-hamclock-backend
 VOACAP_VERSION=v.0.7.6
 HTTP_PORT=80
+ONLY_COMPOSE=false
 
 # Don't set anything past here
 TAG=$(git describe --exact-match --tags 2>/dev/null)
 if [ $? -ne 0 ]; then
-    echo "Not currently on a tag. Using 'latest'."
+    echo "NOTE: Not currently on a tag. Using 'latest'."
+    echo
     TAG=latest
     # should we use the git hash?
     #TAG=$(git rev-parse --short HEAD)
@@ -25,14 +27,33 @@ cd $HERE
 RETVAL=0
 
 main() {
-    case $1 in
-        compose)
-            make_docker_compose
-            ;;
-        '')
-            do_all 
-            ;;
-    esac
+
+    while getopts ":p:ch" opt; do
+        case $opt in
+            c)
+                ONLY_COMPOSE=true
+                ;;
+            p)
+                HTTP_PORT="$OPTARG"
+                ;;
+            \?) # Handle invalid options
+                echo "Invalid option: -$OPTARG" >&2
+                exit 1
+                ;;
+            :) # Handle options requiring an argument but none provided
+                echo "Option -$OPTARG requires an argument." >&2
+                exit 1
+                ;;
+        esac
+    done
+
+    if [ $ONLY_COMPOSE == true ]; then
+        make_docker_compose
+        compose_done_message
+    else
+        do_all
+        build_done_message
+    fi
 }
 
 do_all() {
@@ -40,7 +61,6 @@ do_all() {
     make_docker_compose
     warn_image_tag
     build_image
-    done_message
 }
 
 get_voacap() {
@@ -51,6 +71,7 @@ get_voacap() {
 }
 
 make_docker_compose() {
+    echo "Creating docker compose file for image: '$IMAGE_BASE:$TAG', port '$HTTP_PORT'"
     # make the docker-compose file
     sed "s|__IMAGE__|$IMAGE|" docker-compose.yml.tmpl > docker-compose.yml
     sed -i "s/__CONTAINER__/$CONTAINER/" docker-compose.yml
@@ -68,27 +89,31 @@ warn_image_tag() {
 build_image() {
     # Build the image
     echo
-    echo "Currently building version '$TAG' of '$IMAGE_BASE'"
+    echo "Building image for '$IMAGE_BASE:$TAG'"
     pushd "$HERE/.." >/dev/null
     docker build --rm -t $IMAGE -f docker/Dockerfile .
     RETVAL=$?
     popd >/dev/null
 }
 
-done_message() {
-	if [ $RETVAL -eq 0 ]; then
-		# basic info
-		echo
-		echo "Completed building '$IMAGE'."
-		echo
-		echo "If this is the first time you are running OHB, run setup first:"
-		echo "    docker-ohb-setup.sh"
-		echo
-		echo "To start the container, launch with docker compose:"
-		echo "    docker compose up -d"
-	else
-		echo "build failed with error: $RETVAL"
-	fi
+compose_done_message() {
+    echo
+    echo "If this is the first time you are running OHB, run setup first:"
+    echo "    docker-ohb-setup.sh"
+    echo
+    echo "To start the container, launch with docker compose:"
+    echo "    docker compose up -d"
+}
+
+build_done_message() {
+    if [ $RETVAL -eq 0 ]; then
+        # basic info
+        echo
+        echo "Completed building '$IMAGE'."
+        compose_done_message
+    else
+        echo "build failed with error: $RETVAL"
+    fi
 }
 
 main "$@"
