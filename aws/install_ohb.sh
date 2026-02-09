@@ -252,6 +252,12 @@ sudo chmod 644 "$BASE/scripts/crontab"
 sudo -u www-data crontab "$BASE/scripts/crontab"
 sudo systemctl restart cron
 
+# ---------- logrotate ----------
+STEP=$((STEP+1)); progress $STEP $STEPS
+echo -e "${BLU}==> Installing logrotate config${NC}"
+
+sudo cp ohb.logrotate /etc/logrotate.d/ohb
+
 # ---------- initial gen ----------
 STEP=$((STEP+1)); progress $STEP $STEPS
 echo -e "${BLU}==> Initial artifact generation${NC}"
