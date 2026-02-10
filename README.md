@@ -31,6 +31,12 @@ The goal is to make this as a drop-in replacement for the HamClock backend by re
 ## Interoperability
 This project generates map and data artifacts in the same formats expected by the HamClock client (e.g. zlib compressed BMP RGB565 map tiles) to support interoperability. This project is not affiliated with or endorsed by the original HamClock project or any third party. Data products are derived from public upstream sources such as NOAA SWPC and NASA
 
+## In Work
+- maps/Aurora
+Status: In Progress. We made progress by developing a script to create the base layer and have an Aurora producing script. However, we have not produced all the base layer maps to be able to support all Aurora map sizes. Only Night has been proven to be working so far at 660x330
+- fetchBandConditions.pl
+Status: In Progress. We are investigating and testing the use of ITURHFPROP over VOACAP to see if we get the same results
+
 ## Known Issues
 [Active Issues](https://github.com/BrianWilkinsFL/open-hamclock-backend/issues)
 
@@ -64,13 +70,15 @@ This project generates map and data artifacts in the same formats expected by th
 ```
 ## Selecting map image sizes during install
 
-By default, OHB generates the full HamClock size set:
+By default, OHB generates the full HamClock size set. This is only recommend on a high end PC or VM:
 
 `660x330,1320x660,1980x990,2640x1320,3960x1980,5280x2640,5940x2970,7920x3960`
 
 To install with a custom size set, pass one of the options below:
 
 ### Option A: Comma-separated list
+> [!WARNING]
+> Attempting to image generate multiple sizes or 4K UHD sizes on Pi3B can cause it to overheat!
 
 ```bash
 chmod +x ./install_ohb.sh
