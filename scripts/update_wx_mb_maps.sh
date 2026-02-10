@@ -44,10 +44,10 @@ pick_and_download() {
   # - PRMSL at mean sea level
   # - UGRD/VGRD at 10 m above ground
   local url="${NOMADS_FILTER}?file=${file}"\
-    "&lev_mean_sea_level=on&lev_10_m_above_ground=on"\
-    "&var_PRMSL=on&var_UGRD=on&var_VGRD=on"\
-    "&leftlon=0&rightlon=359.75&toplat=90&bottomlat=-90"\
-    "&dir=${dir}"
+"&lev_mean_sea_level=on&lev_10_m_above_ground=on"\
+"&var_PRMSL=on&var_UGRD=on&var_VGRD=on"\
+"&leftlon=0&rightlon=359.75&toplat=90&bottomlat=-90"\
+"&dir=${dir}"
 
   echo "Trying GFS ${ymd} ${hh}Z ..."
   curl -fs -A "open-hamclock-backend/1.0" --retry 2 --retry-delay 2 "$url" -o "$TMPDIR/gfs.grb2"
