@@ -256,8 +256,7 @@ libx11-dev libxaw7-dev libxmu-dev libxt-dev libmotif-dev wget (needed for VOACAP
 - pip install numpy
 - pip install pygrib
 - pip install matplotlib
-- sudo wget https://downloads.sourceforge.net/project/voacap/vocap/voacapl-0.7.6.tar.gz
-  Note: VOACAPL install instructions in work
+
   
 ## Testing
 
