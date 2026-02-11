@@ -1,8 +1,0 @@
-set xdata time
-set timefmt "%s"
-set format x "%H:%M"
-set style data lines
-set xlabel "UTC"
-set ylabel "nT"
-set title "Solar Magnetic Field"
-plot "Bz.txt" us 1:4 tit 'Bz', "" us 1:5 tit 'Bt'
