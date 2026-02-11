@@ -184,7 +184,7 @@ Note: Anything under maps/ is considered a "Core Map" in HamClock
 - [x] ham/HamClock/version.pl
 - [x] ham/HamClock/wx.pl
 - [x] ham/HamClock/fetchIPGeoloc.pl - requires free tier 1000 req per day account and API key
-- [ ] ham/HamClock/fetchBandConditions.pl
+- [x] ham/HamClock/fetchBandConditions.pl
 - [ ] ham/HamClock/fetchVOACAPArea.pl
 - [ ] ham/HamClock/fetchVOACAP-MUF.pl?YEAR=2026&MONTH=1&UTC=17&TXLAT=&TXLNG=&PATH=0&WATTS=100&WIDTH=660&HEIGHT=330&MHZ=0.00&TOA=3.0&MODE=19&TOA=3.0
 - [ ] ham/HamClock/fetchVOACAP-TOA.pl?YEAR=2026&MONTH=1&UTC=17&TXLAT=&TXLNG=&PATH=0&WATTS=100&WIDTH=660&HEIGHT=330&MHZ=14.10&TOA=3.0&MODE=19&TOA=3.0
@@ -216,7 +216,8 @@ Note: Anything under maps/ is considered a "Core Map" in HamClock
 - [x] Solar flux data generation, pull and display
 - [x] Amateur Satellites data generation, pull and display
 - [ ] PSK Reporter WSPR
-- [ ] VOACAP
+- [X] VOACAP DE DX
+- [ ] VOACAP MUF MAP
 - [ ] RBN
 
 ## Requirements and Install
