@@ -147,7 +147,7 @@ with open(out, "w", encoding="ascii") as f:
     for epoch, bx, by, bz, bt in rows:
         f.write(f"{epoch:<10d} {bx:6.1f} {by:6.1f} {bz:6.1f} {bt:6.1f}\n")
 
-print("OK: wrote 150 samples", file=sys.stderr)
+print("OK: wrote 150 samples", file=sys.stdout)
 PY
 
 # If python exited 2, keep the old file (don’t publish a short one)
