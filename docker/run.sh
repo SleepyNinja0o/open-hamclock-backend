@@ -12,6 +12,8 @@ echo "Starting lighttpd ..."
 
 echo "Syncing the initial, static directory structure ..."
 cp -a /opt/hamclock-backend/ham /opt/hamclock-backend/htdocs
+mv -f /opt/hamclock-backend/htdocs/ham/dashboard/* /opt/hamclock-backend/htdocs
+rmdir /opt/hamclock-backend/htdocs/ham/dashboard
 
 # only needs to be primed when container is instantiated
 if [ ! -e /opt/hamclock-backend/htdocs/prime_crontabs.done ]; then
@@ -23,15 +25,16 @@ if [ ! -e /opt/hamclock-backend/htdocs/prime_crontabs.done ]; then
     touch /opt/hamclock-backend/htdocs/prime_crontabs.done
     echo "Done! OHB data has been primed."
 
-    LAST_TIME_EPOCH=$(date +%s)
+    LAST_TIME_EPOCH=$(date -u +%s)
 else
     echo "OHB was previously installed and does not need to be primed."
 
     LAST_TIME_EPOCH=$(find /opt/hamclock-backend/htdocs -type f -printf '%T@ %p\n' | sort -n | tail -n 1 | cut -d. -f1)
-    echo "Last running timestamp found is: '$(date -d @$LAST_TIME_EPOCH)'"
+    echo "Last running timestamp found is: '$(date -ud @$LAST_TIME_EPOCH)'"
 fi
 
-echo $LAST_TIME_EPOCH > /opt/hamclock-backend/last-ts-running.txt
+echo $LAST_TIME_EPOCH > /opt/last-ts-running.txt
+echo $(date -u +%s) > /opt/started-running.txt
 
 # start cron
 echo "Starting cron ..."

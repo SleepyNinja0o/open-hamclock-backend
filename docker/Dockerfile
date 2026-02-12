@@ -45,14 +45,16 @@ RUN cd /opt/hamclock-backend && \
     mv ohb.logrotate /etc/logrotate.d/ohb && \
     # \
     # set up lighttpd \
-    mv 50-hamclock.conf /etc/lighttpd/conf-available/50-hamclock.conf && \
+    cp lighttpd-conf/*.conf /etc/lighttpd/conf-available/ && \
     /usr/sbin/lighty-enable-mod accesslog && \
     /usr/sbin/lighttpd-enable-mod hamclock && \
+    /usr/sbin/lighttpd-enable-mod ohb-dashboard && \
     rm -f /var/www/html/index.lighttpd.html && \
     cp ham/HamClock/favicon.ico /var/www/html/ && \
     cat <<EOF >>/etc/lighttpd/lighttpd.conf
 server.modules += (
-  "mod_cgi"
+  "mod_cgi",
+  "mod_rewrite",
 )
 EOF
 
