@@ -43,7 +43,7 @@
 6 */1 * * * /opt/hamclock-backend/scripts/gen_dst.sh >> /opt/hamclock-backend/logs/gen_dst.log 2>&1
 */30 * * * * /opt/hamclock-backend/scripts/gen_aurora.sh >> /opt/hamclock-backend/logs/gen_aurora.log 2>&1
 */30 * * * * /opt/hamclock-backend/scripts/gen_noaaswx.sh >> /opt/hamclock-backend/logs/gen_noaswxx.log 2>&1
-*/15 * * * * /opt/hamclock-backend/scripts/update_sdo_304.sh >> /opt/hamclock-backend/logs/update_sdo_304.log 2>&1
+*/15 * * * * /opt/hamclock-backend/scripts/update_all_sdo.sh >> /opt/hamclock-backend/logs/update_all_sdo.log 2>&1
 */5 * * * * /opt/hamclock-backend/scripts/gen_onta.pl >> /opt/hamclock-backend/logs/gen_onta.log 2>&1
 */3 * * * * /opt/hamclock-backend/scripts/gen_drap.sh >> /opt/hamclock-backend/logs/gen_drap.log 2>&1
 * * * * * /opt/hamclock-backend/scripts/genxray.pl >> /opt/hamclock-backend/logs/genxray.log 2>&1
