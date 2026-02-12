@@ -328,6 +328,7 @@ run_flock_sh() {
 run_sh  gen_solarflux-history.sh
 run_perl gen_swind_24hr.pl
 run_perl gen_ssn.pl
+run_perl gen_ssn_history.pl
 run_sh  update_pota_parks_cache.sh
 run_perl update_solarflux_cache.pl
 run_sh  update_wx_mb_maps.sh
@@ -337,13 +338,13 @@ run_perl gen_ng3k.pl
 run_perl merge_dxpeditions.pl
 run_sh  gen_contest-calendar.sh
 run_perl gen_kindex.pl
-run_perl build_esats.pl
 run_sh  update_cloud_maps.sh
 run_sh  update_drap_maps.sh
 run_sh  gen_dst.sh
+run_sh  fetch_tle.sh
 run_sh  gen_aurora.sh
 run_sh  gen_noaaswx.sh
-run_sh  update_sdo_304.sh
+run_sh  update_all_sdo.sh
 run_sh  update_aurora_maps.sh
 run_perl gen_onta.pl
 run_sh  bzgen.sh
