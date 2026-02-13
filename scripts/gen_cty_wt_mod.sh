@@ -5,7 +5,8 @@ THIS=$(basename $0)
 OUTFILE=/opt/hamclock-backend/htdocs/ham/HamClock/cty/cty_wt_mod-ll-dxcc.txt
 URL="https://www.country-files.com/cty/cty_wt_mod.dat"
 
-SOURCE_VERSION=$(curl -s $URL | head -n 3 | sed -n 's/^.*RELEASE\s\+\([0-9.]\+\).*$/\1/p')
+CTY_WX_MOD_BODY=$(curl -s $URL)
+SOURCE_VERSION=$(echo "$CTY_WX_MOD_BODY" | head -n 3 | sed -n 's/^.*RELEASE\s\+\([0-9.]\+\).*$/\1/p')
 EXTRACTED_TIME=$(date "+%a %b %d %H:%M:%S %YZ")
 if [ -e $OUTFILE ]; then
     PREV_SOURCE_VERSION=$(head -n 3 $OUTFILE | sed -n 's/^.*RELEASE\s\+\([0-9.]\+\).*$/\1/p')
@@ -24,7 +25,7 @@ cat <<EOF > $OUTFILE
 # prefix     lat+N   lng+W  DXCC
 EOF
 
-curl -s https://www.country-files.com/cty/cty_wt_mod.dat | awk '
+echo "$CTY_WX_MOD_BODY" | awk '
 { 
     # This line removes all Windows Carriage Returns (\r) immediately
     gsub(/\r/, ""); 
