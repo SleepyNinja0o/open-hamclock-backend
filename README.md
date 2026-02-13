@@ -53,7 +53,8 @@ Status: In Progress. We made progress by developing a script to create the base 
 - [x] Ubuntu 24 AWS AMI (Baremetal, VM, or WSL)
 - [x] Debian 13.3 
 - [x] Raspberry Pi 3b+, 4, and 5
-     - [x] Tested Trixie 64 bit OS on Pi 3b+ with image sizes 660x330, 1320x660, and 2640x1320
+     - [x] Tested Trixie 64 bit OS on Pi 3b+ with image sizes 660x330, 1320x660
+           - 2640x1320 for MUF-RT does not currently work
 - [x] Inovato Quadra
 - [ ] Mac 
 
