@@ -48,15 +48,7 @@ RUN cd /opt/hamclock-backend && \
     cp lighttpd-conf/*.conf /etc/lighttpd/conf-available/ && \
     /usr/sbin/lighty-enable-mod accesslog && \
     /usr/sbin/lighttpd-enable-mod hamclock && \
-    /usr/sbin/lighttpd-enable-mod ohb-dashboard && \
-    rm -f /var/www/html/index.lighttpd.html && \
-    cp ham/HamClock/favicon.ico /var/www/html/ && \
-    cat <<EOF >>/etc/lighttpd/lighttpd.conf
-server.modules += (
-  "mod_cgi",
-  "mod_rewrite",
-)
-EOF
+    /usr/sbin/lighttpd-enable-mod ohb-dashboard
 
 # let's rock!
 CMD ["/opt/run.sh"]
