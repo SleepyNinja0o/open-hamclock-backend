@@ -43,7 +43,19 @@ Be sure you have a recent docker and docker compose installed before proceeding.
 
 Either get the source tree from GitHub or download the manage-ohb-docker.sh script. Getting the source tree is only necessary if you plan to build your own custom image, which is covered down below.
 
-### option 1: get the GitHub source tree
+### option 1: download the manager:
+Find the tag you want from git:
+```
+https://github.com/BrianWilkinsFL/open-hamclock-backend/tags
+```
+Navigate into the tag, download from ```Manage Docker Installs``` which will get you a file named: ```manage-ohb-docker.sh```, and make it executable. Using curl might work like this for v1.0:
+```
+curl -sO 
+https://github.com/BrianWilkinsFL/open-hamclock-backend/releases/download/v1.0/manage-ohb-docker.sh
+chmod +x manage-ohb-docker.sh
+```
+
+### option 2: get the GitHub source tree
 The git clone command below should have the right URL but you can check it by visiting https://github.com/BrianWilkinsFL/open-hamclock-backend, click on the green "Code" button and copy the https url.
 
 On your computer, clone the repository:
@@ -59,18 +71,7 @@ cd open-hamclock-backend/docker
 Ensure you are on the release you want to build. For example:
 ```
 git tag # lists the available tags
-git checkout 1.0
-```
-
-### option 2: download the manager:
-Find the tag you want from git:
-```
-https://github.com/BrianWilkinsFL/open-hamclock-backend/tags
-```
-Navigate into the tag, download manage-ohb-docker.sh, and make it executable. Using curl might work like this:
-```
-curl -sO https://raw.githubusercontent.com/BrianWilkinsFL/open-hamclock-backend/refs/heads/main/docker/manage-ohb-docker.sh
-chmod +x manage-ohb-docker.sh
+git checkout v1.0
 ```
 
 ## Run the manager
@@ -88,11 +89,12 @@ Double check your docker version:
 Do an install. Note that if you are running it from a git checkout, it will use the git tag or branch name. If you are running it standalone you should provide it the tag you want to install. It defaults to ```latest```:
 
 ```
-./manage-ohb-docker.sh install -t 1.0
+./manage-ohb-docker.sh install -t v1.0
 ```
 
 When the script is done, you should have a running install of OHB! Try this:
 ```
+# insert your ip address:
 curl -s http://127.0.0.1/ham/HamClock/version.pl
 ```
 
@@ -121,7 +123,7 @@ The build-image.sh utility will create an image for you based on the git branch 
 # Upgrades
 Upgrading OHB is easy. Basically run the manager utility with upgrade. Like the install, it will default to the git tag if there is one, or fall back to latest. You should provide the tag you want to upgrade to if the default isn't what you want:
 ```
-./manage-ohb-docker.sh upgrade  -t 1.0
+./manage-ohb-docker.sh upgrade -t v1.0
 ```
 
 The data is persisted in the storage space you created in the first install. It will have the history after you upgrade. If there are new features, possibly those could take a while to populate. It just depends on the feature.

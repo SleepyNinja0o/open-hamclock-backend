@@ -25,5 +25,5 @@ jobs:
           # Grabs file from repo tree and uploads with a label
           gh release create ${{ github.event.inputs.tag_name }} \
             './docker/manage-ohb-docker.sh#Manage Docker Installs' \
-            --title "Release ${{ github.event.inputs.tag_name }}" \
+            --title "OHB Release: ${{ github.event.inputs.tag_name }}" \
             --generate-notes
