@@ -194,6 +194,11 @@ sudo mkdir -p \
  "$BASE/data" \
  "$BASE/htdocs/ham/HamClock"
 
+#Fix www-data gmt execution error
+sudo mkdir /var/www/.gmt
+sudo chown www-data:www-data /var/www/.gmt
+sudo chmod 755 /var/www/.gmt
+
 # ---------- maps (from GitHub release) ----------
 STEP=$((STEP+1)); progress $STEP $STEPS
 echo -e "${BLU}==> Installing map assets${NC}"
