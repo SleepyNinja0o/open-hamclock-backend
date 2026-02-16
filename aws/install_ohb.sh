@@ -162,7 +162,7 @@ sudo -u www-data env HOME="$BASE/tmp" XDG_CACHE_HOME="$BASE/tmp" PIP_CACHE_DIR="
 "$VENV/bin/pip" install --upgrade pip
 
 sudo -u www-data env HOME="$BASE/tmp" XDG_CACHE_HOME="$BASE/tmp" PIP_CACHE_DIR="$BASE/tmp/pip-cache" \
-"$VENV/bin/pip" install numpy pygrib matplotlib >/dev/null &
+"$VENV/bin/pip" install numpy pygrib matplotlib pandas >/dev/null &
 spinner $!
 
 # ---------- relocate ham ----------
