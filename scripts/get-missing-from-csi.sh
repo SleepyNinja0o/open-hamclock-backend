@@ -40,7 +40,7 @@ while IFS= read -r line || [[ -n "$line" ]]; do
         fi
     elif [ ! -e $OUT_FILE -a ! -e $OUT_FILE.md5 ]; then
         KEEP_FILE=yes
-    elif [ ! -e $OUT_FILE -o ! -e $OUT_FILE.md5 ]; then
+    elif [ -e $OUT_FILE -o ! -e $OUT_FILE.md5 ]; then
         KEEP_FILE=no
     fi
     if [ $KEEP_FILE == yes ]; then
