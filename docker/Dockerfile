@@ -25,7 +25,7 @@ RUN cd /opt/hamclock-backend && \
         data \
         htdocs && \
     mv  docker/run.sh /opt && \
-    sed 's/^\([^ #]\+[ ]\+\)\{5\}\([^>]\+\)\([> ]\+\)\?\([^ ]*\).*$/echo "  Running: \2"\n\2\3\4/' \
+    sed 's/^\([^ #]\+[ ]\+\)\{5\}\([^>]\+\)\([> ]\+\)\?\(.*\).*$/echo "  Running: \2"\n\2\3\4/' \
         scripts/crontab > prime_crontabs.sh && \
     # \
     # set permissions \
