@@ -108,23 +108,18 @@ def get_swpc_json_today(url: str, today_utc) -> Optional[int]:
 
     today_str = today_utc.isoformat()
 
-    # Scan from the end: newest entries are typically last
     for obj in reversed(data):
-        if not isinstance(obj, dict):
-            continue
-        obs = obj.get("Obsdate")
-        if not obs:
-            continue
-        if str(obs)[:10] != today_str:
-            continue
+       if not isinstance(obj, dict):
+          continue
 
-        v = obj.get("swpc_ssn")
-        if v is None:
-            return None
-        try:
-            return int(v)
-        except Exception:
-            return None
+       v = obj.get("swpc_ssn")
+       if v is None:
+          continue
+
+       try:
+          return int(v)
+       except Exception:
+          return None
 
     return None
 
@@ -206,8 +201,9 @@ def main() -> int:
                 today_src = "silso"
         except Exception:
             pass
-
+    
     if today_ssn is not None:
+        
         combined = combined[combined["date"] != today_utc]
         combined = pd.concat(
             [combined, pd.DataFrame([{"date": today_utc, "ssn": int(today_ssn), "src": today_src}])],
